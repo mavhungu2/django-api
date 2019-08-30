@@ -16,8 +16,8 @@ This api is base on django_restful
 # Structure
 | Endpoint   | Method  | Desciption  | Arguments  |
 | ---------- | ------- | ----------- | ---------- |
-| currencies | GET | Returns all the currencies with ZAR as a base | currency(string),value(number)  |
-| currencies | POST | Returns the conversed value of the currency in rands value | None |
+| currencies | GET | Returns all the currencies with ZAR as a base | None  |
+| currencies | POST | Returns the conversed value of the currency in rands value | currency(string),value(number) |
 | currencies | PUT | Updates The values of the currecies in the database | None   |
 
 ## URLS Views
