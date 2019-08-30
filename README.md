@@ -10,6 +10,8 @@ This api is base on django_restful
 
 	pip install django
 	pip install djangorestframework
+	pip install requests
+	pip install django-cors-headers
 	
 # Structure
 | Endpoint   | Method  | Desciption  | Arguments  |
