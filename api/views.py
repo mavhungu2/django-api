@@ -30,10 +30,10 @@ def currencies(request):
 
     if request.method == "POST":
         try:
-            value1 = Currency.objects.get(name=request.POST['currency'])
+            value1 = Currency.objects.get(name=request.GET['currency'])
             print(value1)
         except Currency.DoesNotExist:
             return JsonResponse({"code": 404, "message": "Currency Does Not Exist"})
         value = CurrencySerializer(value1).data['value']
         print(value)
-        return JsonResponse({"result" : float(request.POST['value'])/value})
+        return JsonResponse({"result" : float(request.GET['value'])/value})
